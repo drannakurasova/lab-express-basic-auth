@@ -1,0 +1,25 @@
+{{!--ITER 1 STEP 2. CREAMOS LOS ENLACES PARA SIGN UP Y LOG IN --}}
+
+<div>
+<h3>You can sign up here</h3>
+
+<form action="/auth/signup" method="post">
+
+<label for="username">Your username</label>
+<input type="text" name="username">
+<br>
+
+<label for="passowrd">Your password</label>
+<input type="password" name="password" id="">
+
+<br>
+
+<button type="submit">Ready to sign up</button>
+
+{{!-- ITER 1 STEP 3 space for an error message --}}
+{{#if errorMessage}}
+<h4>{{this.errorMessage}} </h4>
+{{/if}}
+</form>
+
+</div>

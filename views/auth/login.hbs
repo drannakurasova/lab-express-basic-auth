@@ -1,0 +1,25 @@
+{{!--ITER 2 STEP 1. CREAMOS la vista para LOG IN --}}
+
+<div>
+<h3>You can log in here</h3>
+
+<form action="/auth/login" method="post">
+
+<label for="username">Your username</label>
+<input type="text" name="username">
+<br>
+
+<label for="passowrd">Your password</label>
+<input type="password" name="password" id="">
+
+<br>
+
+<button type="submit">Ready to log in</button>
+
+
+{{#if errorMessage}}
+<h4>{{this.errorMessage}} </h4>
+{{/if}}
+</form>
+
+</div>
